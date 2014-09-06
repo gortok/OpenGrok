@@ -97,8 +97,8 @@ public class SubversionRepository extends Repository {
             cmd.add("--xml");
             File directory = new File(getDirectoryName());
 
-            Executor executor = new Executor(cmd, directory);
-            if (executor.exec() == 0) {
+            Executor executor = new Executor(cmd, directory); 
+           if (executor.exec() == 0) {
                 try {
                     DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
                     DocumentBuilder builder = factory.newDocumentBuilder();

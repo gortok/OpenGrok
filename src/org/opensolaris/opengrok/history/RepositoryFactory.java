@@ -54,6 +54,7 @@ public final class RepositoryFactory {
         new CVSRepository(),
         new RepoRepository(),
         new SSCMRepository(),
+        new TeamFoundationServerRepository(),
     };
 
     private RepositoryFactory() {

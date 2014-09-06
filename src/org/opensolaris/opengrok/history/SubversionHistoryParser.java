@@ -145,8 +145,8 @@ class SubversionHistoryParser implements Executor.StreamHandler {
      * @param repos Pointer to the SubversionReporitory
      * @param sinceRevision the revision number immediately preceding the first
      * revision we want, or {@code null} to fetch the entire history
-     * @return object representing the file's history
-     */
+     * @return object representing the file's history 
+    */
     History parse(File file, SubversionRepository repos, String sinceRevision)
             throws HistoryException {
         initSaxParser();
